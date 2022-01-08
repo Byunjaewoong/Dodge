@@ -6,8 +6,11 @@ document.body.appendChild(stopwatch);
 
 canvas = document.createElement('canvas');
 canvas.id = "canvas";
-canvas.width = document.body.clientWidth * window.devicePixelRatio;
-canvas.height = document.body.clientHeight * window.devicePixelRatio;
+//canvas.width = document.body.clientWidth * window.devicePixelRatio;
+//canvas.height = document.body.clientHeight * window.devicePixelRatio;
+canvas.width = document.body.clientWidth;
+canvas.height = document.body.clientHeight;
+
 document.body.appendChild(canvas);
 ctx = canvas.getContext("2d");
 
